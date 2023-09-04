@@ -2,21 +2,21 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
   {
-    id: "1",
-    title: "Task 1",
+    id: "Id: 1",
+    title: "Tarea 1",
     completed: false,
-    description: "This is a task",
+    description: "Esto es una tarea",
   },
   {
-    id: "2",
-    title: "Task 2",
+    id: "Id: 2",
+    title: "Tarea 2",
     completed: false,
-    description: "This is a task",
+    description: "Esto es una tarea",
   },
 ];
 
 const userSlice = createSlice({
-  name: "tasks",
+  name: "Tareas Actuales:",
   initialState,
   reducers: {
     addTask: (state, action) => {

@@ -13,13 +13,13 @@ function TasksList() {
   return (
     <div className="w-4/6">
       <header className="flex justify-between items-center py-4">
-        <h1>Tasks ({tasks.length})</h1>
+        <h1>Tareas Creadas: ({tasks.length})</h1>
 
         <Link
           to="/create-task"
           className="bg-indigo-600 px-2 py-1 rounded-sm text-sm shadow-sm"
         >
-          Create Task
+           Crear Tarea 
         </Link>
       </header>
 
@@ -33,13 +33,13 @@ function TasksList() {
                   to={`/edit-task/${task.id}`}
                   className="bg-zinc-600 px-2 py-1 text-xs rounded-md self-center"
                 >
-                  Edit
+                  Editar
                 </Link>
                 <button
                   onClick={() => handleDelete(task.id)}
                   className="bg-red-500 px-2 py-1 text-xs rounded-md"
                 >
-                  delete
+                  Borrar
                 </button>
               </div>
             </header>
